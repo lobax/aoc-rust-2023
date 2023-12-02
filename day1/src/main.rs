@@ -57,11 +57,11 @@ fn get_first_digit(bytes: &[u8]) -> Option<&u8> {
         [b't', b'w', b'o', ..] => Some(&b'2'),
         [b't', b'h', b'r', b'e', b'e', ..] => Some(&b'3'),
         [b'f', b'o', b'u', b'r', ..] => Some(&b'4'),
-        [b'f', b'i',b'v',b'e', ..] => Some(&b'5'),
-        [b's',b'i',b'x', ..] => Some(&b'6'),
-        [b's',b'e',b'v',b'e',b'n', ..] => Some(&b'7'),
-        [b'e',b'i',b'g',b'h',b't', ..] => Some(&b'8'),
-        [b'n',b'i',b'n',b'e', ..] => Some(&b'9'),
+        [b'f', b'i', b'v', b'e', ..] => Some(&b'5'),
+        [b's', b'i', b'x', ..] => Some(&b'6'),
+        [b's', b'e', b'v', b'e', b'n', ..] => Some(&b'7'),
+        [b'e', b'i', b'g', b'h', b't', ..] => Some(&b'8'),
+        [b'n', b'i', b'n', b'e', ..] => Some(&b'9'),
         [_, tail @ ..] => get_first_digit(tail), 
     }
 }
